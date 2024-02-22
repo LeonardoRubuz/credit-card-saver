@@ -2,6 +2,7 @@ import './App.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/home';
 import AddCardPage from './pages/addCard';
+import CardsList from './pages/cardsList';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path : "/all-cards",
-    element : <AddCardPage />
+    element : <CardsList />
   }
 ])
 
