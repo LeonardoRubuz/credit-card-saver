@@ -5,7 +5,7 @@ function Home() {
         <div className="flex h-[100%] w-[100%] items-center justify-center bg-[#1f2631]">
             <div className="text-white h-[50%] w-[40%] bg-[#323b4a] rounded-3xl flex flex-col text-center justify-between py-4">
                 <p className="uppercase">Credit card saver app</p>
-                <p className="text-[2rem]">Save your money and get rewards!</p>
+                <p className="text-[2rem]">Organize your cards informations in a single place!</p>
                 <hr className="mx-[5rem]"/>
                 <div className="flex gap-8 items-center justify-center mb-6">
                     <Link to="/add-card">
