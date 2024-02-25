@@ -1,9 +1,26 @@
 import AddButton from "../components/addButton";
 import ListElement from "../components/listElement";
 import axios from 'axios'
+import { useEffect } from "react";
+
+const getCards = async () => {
+    return await axios.get('http://localhost:5000/cards')
+    .then(response => {
+        console.log(response);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+}
 
 function CardsList() {
-    
+    useEffect(() => {
+        async function fetchAllTweets(){
+          const CardsList = await getCards()
+          console.log(CardsList)
+        }
+        fetchAllTweets()
+      }, [])
     return ( 
         <div className="flex h-[100%] w-[100%] max-h-[100%] items-center justify-center bg-[#141625] text-white">
             <div className="h-[80%] w-[60%] flex flex-col">
