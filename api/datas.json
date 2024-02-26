@@ -2,27 +2,51 @@
     "cards" : [
         {
             "holder" : "Leonardo",
-            "digits" : "1234-5678-9012"
+            "digits" : "1234-5678-9012",
+            "cvc" : "897",
+            "money" : 500,
+            "expiryMonth" : "01",
+            "expiryYear" : "70"
         },
         {
             "holder" : "Isaac",
-            "digits" : "1234-5678-9012"
+            "digits" : "1234-5678-9012",
+            "cvc" : "897",
+            "money" : 500,
+            "expiryMonth" : "01",
+            "expiryYear" : "70"
         },
         {
             "holder" : "Carl",
-            "digits" : "1234-5678-9012"
+            "digits" : "1234-5678-9012",
+            "cvc" : "897",
+            "money" : 500,
+            "expiryMonth" : "01",
+            "expiryYear" : "70"
         },
         {
             "holder" : "Sweet",
-            "digits" : "1234-5678-9012"
+            "digits" : "1234-5678-9012",
+            "cvc" : "897",
+            "money" : 500,
+            "expiryMonth" : "01",
+            "expiryYear" : "70"
         },
         {
             "holder" : "Big Smoke",
-            "digits" : "1234-5678-9012"
+            "digits" : "1234-5678-9012",
+            "cvc" : "897",
+            "money" : 500,
+            "expiryMonth" : "01",
+            "expiryYear" : "70"
         },
         {
             "holder" : "Tempeny",
-            "digits" : "1234-5678-9012"
+            "digits" : "1234-5678-9012",
+            "cvc" : "897",
+            "money" : 500,
+            "expiryMonth" : "01",
+            "expiryYear" : "70"
         }
     ]
 }
