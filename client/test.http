@@ -1,1 +1,2 @@
-http://localhost:5000/cards
+
+POST  http://localhost:5000/card

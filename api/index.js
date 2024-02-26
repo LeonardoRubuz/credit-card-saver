@@ -1,6 +1,6 @@
+const datas = require('./datas.json') 
 const express = require("express")
 const app = express()
-
 // Settings
 
 // CORS
@@ -22,5 +22,12 @@ if (!process.env.DISABLE_XORIGIN) {
 app.get("/cards",(req, res) => {
     res.send("All cards")
 })
+
+app.post("/card", (req, res) => {
+  const newCard = req.body
+  datas.cards.push(newCard)
+  res.sendStatus(200)
+})
+
 
 app.listen(5000)
