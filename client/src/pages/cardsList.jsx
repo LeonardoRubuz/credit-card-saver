@@ -1,17 +1,7 @@
 import AddButton from "../components/addButton";
 import ListElement from "../components/listElement";
-import axios from 'axios'
 import { useEffect } from "react";
-
-const getCards = async () => {
-    return await axios.get('http://localhost:5000/cards')
-    .then(response => {
-        console.log(response);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-}
+import { getCards } from "../utils/utils-function";
 
 function CardsList() {
     useEffect(() => {

@@ -1,3 +1,28 @@
 {
-    "cards" : []
+    "cards" : [
+        {
+            "holder" : "Leonardo",
+            "digits" : "1234-5678-9012"
+        },
+        {
+            "holder" : "Isaac",
+            "digits" : "1234-5678-9012"
+        },
+        {
+            "holder" : "Carl",
+            "digits" : "1234-5678-9012"
+        },
+        {
+            "holder" : "Sweet",
+            "digits" : "1234-5678-9012"
+        },
+        {
+            "holder" : "Big Smoke",
+            "digits" : "1234-5678-9012"
+        },
+        {
+            "holder" : "Tempeny",
+            "digits" : "1234-5678-9012"
+        }
+    ]
 }

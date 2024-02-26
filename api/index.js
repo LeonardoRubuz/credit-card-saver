@@ -20,13 +20,18 @@ if (!process.env.DISABLE_XORIGIN) {
 
 // Routes 
 app.get("/cards",(req, res) => {
-    res.send("All cards")
+    res.send(datas.cards)
+    console.log(req);
 })
 
 app.post("/card", (req, res) => {
+  if (!req.body) {
+    res.status(403)
+    res.send("Données Invalides")
+  }
   const newCard = req.body
   datas.cards.push(newCard)
-  res.sendStatus(200)
+  res.status(200).send('Données enregistrées')
 })
 
 
