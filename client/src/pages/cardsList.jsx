@@ -1,16 +1,19 @@
 import AddButton from "../components/addButton";
 import ListElement from "../components/listElement";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getCards } from "../utils/utils-function";
 
 function CardsList() {
+    const [cards, setCards] = useState([]);
     useEffect(() => {
         async function fetchAllTweets(){
           const CardsList = await getCards()
-          console.log(CardsList)
+          setCards(CardsList)
+          //console.log(cards)
         }
         fetchAllTweets()
       }, [])
+      console.log(cards);
     return ( 
         <div className="flex h-[100%] w-[100%] max-h-[100%] items-center justify-center bg-[#141625] text-white">
             <div className="h-[80%] w-[60%] flex flex-col">
