@@ -2,6 +2,7 @@ import AddButton from "../components/addButton";
 import ListElement from "../components/listElement";
 import { useEffect, useState } from "react";
 import { getCards } from "../utils/utils-function";
+import CardContext from "../contexts/cardContext";
 
 function CardsList() {
     const [cards, setCards] = useState([]);
@@ -27,18 +28,15 @@ function CardsList() {
                     </div>
                 </div>
                 <ul className="flex flex-col gap-4 mt-7 overflow-y-scroll">
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
-                    <ListElement />
+                    {
+                        cards.map((card, index) => {
+                            return (
+                                <CardContext.Provider value={card} key={index}>
+                                    <ListElement />
+                                </CardContext.Provider>
+                            )
+                        })
+                    }
                 </ul>
             </div>
         </div>
