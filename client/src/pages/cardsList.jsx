@@ -27,7 +27,7 @@ function CardsList() {
                         <AddButton />
                     </div>
                 </div>
-                <ul className="flex flex-col gap-4 mt-7 overflow-y-scroll">
+                <ul className="flex flex-col gap-4 mt-7">
                     {
                         cards.map((card, index) => {
                             return (
