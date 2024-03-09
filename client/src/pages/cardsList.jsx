@@ -16,7 +16,7 @@ function CardsList() {
       }, [])
       console.log(cards);
     return ( 
-        <div className="flex h-[100%] w-[100%] max-h-[100%] items-center justify-center bg-[#141625] text-white min-h-[100vh]">
+        <div className="flex h-[auto] w-[100%]  items-center justify-center bg-[#141625] text-white">
             <div className="h-[80%] w-[60%] flex flex-col">
                 <div className="flex justify-between items-center px-7"> {/*Header */}
                     <div>

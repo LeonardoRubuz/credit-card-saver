@@ -4,7 +4,7 @@ import FrontCard from "../components/frontCard";
 
 function AddCardPage() {
     return ( 
-        <>
+        <div className="w-[100%] h-[100%] min-h-[100vh]">
             <div className="w-[40%] ml-[9rem] my-[8rem] h-[60%] z-1 absolute text-white flex flex-col justify-between gap-6">
                 <FrontCard />
                 <BackCard />
@@ -15,7 +15,7 @@ function AddCardPage() {
                     <Form />
                 </div>
             </div>
-        </>
+        </div>
      );
 }
 
