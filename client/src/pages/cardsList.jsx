@@ -16,7 +16,7 @@ function CardsList() {
       }, [])
       console.log(cards);
     return ( 
-        <div className="flex h-[100%] w-[100%]  items-center justify-center bg-[#141625] text-white min-h-[inherit]">
+        <div className="flex h-[auto] w-[100%]  items-center justify-center bg-[#141625] text-white">
             <div className="h-[80%] w-[60%] flex flex-col">
                 <div className="flex justify-between items-center px-7"> {/*Header */}
                     <div>
@@ -27,7 +27,7 @@ function CardsList() {
                         <AddButton />
                     </div>
                 </div>
-                <ul className="flex flex-col gap-4 mt-7 ">
+                <ul className="flex flex-col gap-4 mt-7">
                     {
                         cards.map((card, index) => {
                             return (
