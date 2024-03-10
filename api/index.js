@@ -2,6 +2,7 @@ const datas = require('./datas.json')
 const express = require("express")
 const app = express()
 // Settings
+app.use(express.json())
 
 // CORS
 if (!process.env.DISABLE_XORIGIN) {
@@ -24,7 +25,7 @@ app.get("/cards",(req, res) => {
     console.log(req);
 })
 
-app.post("/card", (req, res) => {
+app.post("/cards", (req, res) => {
   if (!req.body) {
     res.status(403)
     res.send("Données Invalides")
