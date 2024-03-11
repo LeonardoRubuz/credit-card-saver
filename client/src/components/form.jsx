@@ -1,10 +1,12 @@
+import { addCard } from "../utils/utils-function";
+
 function Form() {
-    function onSubmitForm(data){
-        console.log(data);
+    function onSubmitForm(data, event){
+        addCard(data);
     }
     return ( 
         <form className="h-[70%] w-[50%] flex flex-col justify-around px-[3rem] ml-[10rem] gap-[0.01rem]"
-         onSubmit={onSubmitForm()}>
+         onSubmit={onSubmitForm}>
             <div className="flex flex-col">
                 <label className="font-bold">CARDHOLDER NAME</label>
                 <input name="holder" className="px-3 border-2 border-[#e4e5e9] h-[2.9rem] rounded-lg" type="text" placeholder="e.g. Jane Appleseed"/>

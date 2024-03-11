@@ -11,6 +11,14 @@ const getCards = async () => {
     })
 }
 
+const addCard = (data) => {
+    axios.post('http://localhost:5000/cards', data)
+    .then(response => {
+        console.log(response)
+    })
+    .catch(error => {
+        console.log(error);
+    })
+}
 
-
-export { getCards }
+export { getCards, addCard }
