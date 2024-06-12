@@ -19,3 +19,7 @@ This app  is designed to help users save their credit card informations within a
 
 ### Run servers 
 `` npm run start`` 
+
+
+### Author
+[Leonardo Rubuz](https://www.github.com/LeonardoRubuz)
